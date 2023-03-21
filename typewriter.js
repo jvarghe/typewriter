@@ -1,9 +1,9 @@
-/* CHALLENGE: ANIMATED SENTENCE [MODULE 1, WEEK 4] 
- * 
- * In this activity, we are going to take a sentence and display it as an 
+/* CHALLENGE: ANIMATED SENTENCE [MODULE 1, WEEK 4]
+ *
+ * In this activity, we are going to take a sentence and display it as an
  * animation. The tricky part will be to stagger the appearance of characters
- * by an increasing period of time. For example the delay for the first 
- * character will 0 ms, the second will 50 ms, the third 100 ms, the fourth 
+ * by an increasing period of time. For example the delay for the first
+ * character will 0 ms, the second will 50 ms, the third 100 ms, the fourth
  * 150 ms... and so on.
  */
 
@@ -32,7 +32,7 @@ const typeWriter = function(printChar) {
   // After all the characters are printed out, use `console.log` to print out
   // the newline character so that the command prompt appears on a new line.
   console.log("\n");
-}
+};
 
 
 
@@ -42,12 +42,12 @@ const printChar = function(char, delay) {
   // Call setTimeout and pass in a delay.
   setTimeout(() => {
 
-    // Unlike `console.log`, `process.stdout.write` does not print a new line 
+    // Unlike `console.log`, `process.stdout.write` does not print a new line
     // character after every call.
     process.stdout.write(char);
 
   }, delay);
-}
+};
 
 
 
